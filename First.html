@@ -6,15 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First HTML File</title>
     <style>
-
+    p {
+        background-color: antiquewhite;
+    }
     </style>
+    <link rel="stylesheet" href="first.css">
 </head>
 <body>
     <header>Hello World!</header>
     <main>
         <h1>Welcome!</h1>
-        <p>It's me, Jamie!</p>
-        <img src="IMG_8174.jpg" alt="Me" style="width:300px;height:400px;">
+        <p>It's me, Jamie! This is me in a <span style="color:blue">bluish</span> <span style="color:grey">grey</span> hoodie.<br></p>
+        <img src="IMG_8174.jpg" alt="Me" style="width:30vmax;height:30vmax;">
+        <h2>Some of my interests:</h2>
+        <ul>
+            <li>Baking</li>
+            <li class="lego">LEGO</li>
+            <li>Biking</li>
+        </ul>
+        <h3>A TV show I'm currently watching is <a href="https://en.wikipedia.org/wiki/Adventure_Time">Adventure Time</a>.</h3>
+        <h2>My favorite code snippet</h2>
+        <pre>
+public static int GDC(int num1, int num2) {
+    if (num1 == num2) {
+        return num1;
+    }
+    if (num1 &gt; num2) {
+        return GDC(num2, num1 - num2);
+    }
+    if (num1 &lt; num2) {
+        return GDC(num1, num2 - num1);
+    }
+    return 0;
+}
+        </pre>
+        <p>It was the first recursive function I learned (its corresponding proof I leanred later was also my first CS proof). I find the implmentation so elegant.</p>
+        
     </main>
+    <footer>See ya</footer>
 </body>
 </html>
